@@ -1,14 +1,18 @@
 body {                                                     
-        background-color: rgb(141, 198, 218);
+        background-color: whitesmoke;
 }
 
 header {
-    background-color: darkcyan;
+    background-color: whitesmoke;
 }
 
-p {                                         /* felles selector for alle p */
-    background-color: bisque;
+p {                              /* felles selector for alle p */
+    width: 650px;
 }
+    
+ 
+
+
 
 
 
@@ -26,14 +30,16 @@ p {                                         /* felles selector for alle p */
     color:rgb(5, 24, 32);
     width: 600px;
     height: 200px; 
+    padding: 20px;
+    margin: 100px;
 }
 
 
 .third-paragraph {
     background-color: darkolivegreen;
     color:rgb(141, 198, 218);
-    width: 500px;
-    height: 300px; 
+    width: 300px;
+    padding: 50px 20px 100px 40px;
 
 }
 
@@ -43,6 +49,17 @@ p {                                         /* felles selector for alle p */
     color: white;
     width: 400px;
     height: 400px;
+    padding-top: 20px;
 }
 
 /* id står høyere enn class på hierarkiet, og overkjører derfor class */
+
+
+.main-picture {
+    width: 400px;
+    margin: 0 auto 0 auto;
+}
+
+.image-1 {
+    width: 100%;
+}
