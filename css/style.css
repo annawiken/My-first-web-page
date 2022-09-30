@@ -1,0 +1,31 @@
+body {                                                     
+        background-color: rgb(141, 198, 218);
+}
+
+header {
+    background-color: darkcyan;
+}
+
+p {                                         /* felles selector for alle p */
+    background-color: bisque;
+}
+
+
+
+
+/* For å skille mellom de ulike p, kan vi gi dem et ekstra navn: */
+/* Vi refererer til en class i index.html ved å brukte .punktum */
+
+.first-paragraph {
+    background-color: chocolate;
+}
+
+
+.second-paragraph {
+    background-color: darkkhaki;
+}
+
+
+.third-paragraph {
+    background-color: darkolivegreen;
+}
