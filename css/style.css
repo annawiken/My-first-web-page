@@ -23,9 +23,26 @@ p {                                         /* felles selector for alle p */
 
 .second-paragraph {
     background-color: darkkhaki;
+    color:rgb(5, 24, 32);
+    width: 600px;
+    height: 200px; 
 }
 
 
 .third-paragraph {
     background-color: darkolivegreen;
+    color:rgb(141, 198, 218);
+    width: 500px;
+    height: 300px; 
+
 }
+
+
+#fourth-paragraph {
+    background-color: hotpink;
+    color: white;
+    width: 400px;
+    height: 400px;
+}
+
+/* id står høyere enn class på hierarkiet, og overkjører derfor class */
