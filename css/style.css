@@ -1,24 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*  Fungerer kun når man er online, fordi VS Code henter fra google fonts */
+
+
+
 body {                                                     
         background-color: whitesmoke;
 }
 
 header {
     background-color: whitesmoke;
+    padding: 20px; 
+    display: none; 
 }
+
+/* Vår desktop-versjon, en regel vi lager */ 
+@media screen and (min-width: 700px) {    /* bredde må være minst 700 piksler */
+    header {
+        display: block;
+    }
+}
+
 
 p {                              /* felles selector for alle p */
     width: 650px;
 }
     
- 
-
-
-
-
-
 
 /* For å skille mellom de ulike p, kan vi gi dem et ekstra navn: */
 /* Vi refererer til en class i index.html ved å brukte .punktum */
+
+
+.box1 {
+    width: 33%;
+    height: 80px;
+    background-color: darkgreen;
+    display: inline-block;
+}
+
+.box2 {
+    width: 33%;
+    height: 80px;
+    background-color: darkseagreen;
+    display: inline-block;
+}
+
+.box3 {
+    width: 33%;
+    height: 80px;
+    background-color: burlywood;
+    display: inline-block;
+}
+
 
 .first-paragraph {
     background-color: chocolate;
@@ -40,6 +73,7 @@ p {                              /* felles selector for alle p */
     color:rgb(141, 198, 218);
     width: 300px;
     padding: 50px 20px 100px 40px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -52,7 +86,7 @@ p {                              /* felles selector for alle p */
     padding-top: 20px;
 }
 
-/* id står høyere enn class på hierarkiet, og overkjører derfor class */
+/* id står høyere enn class på hierarkiet, og overkjører derfor properties inne i en class */
 
 
 .main-picture {
@@ -62,4 +96,32 @@ p {                              /* felles selector for alle p */
 
 .image-1 {
     width: 100%;
+}
+
+.my-box {
+    width: 400px;
+    height: 400px;
+    background-color: darkkhaki; 
+    position: absolute; /* gir tilgang til fire andre properties */
+    top: 10px;
+    right: 10px;
+}
+
+.my-box p {
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    width: 50%;         /* p er nå 50 % av den containeren den tilhører, altså my-box */
+    font-size: 60px;
+}
+
+
+.flex-container { /* Det som står rundt alle elementene */
+    display: flex; /* tvinger alle elementer i egen container til å havne inline med hverandre */
+}
+
+
+.flex-item { /* hver container */
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
 }
